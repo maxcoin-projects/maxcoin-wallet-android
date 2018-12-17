@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion = 26
-    buildToolsVersion = '26.0.3'
+    buildToolsVersion = '28.0.3'
 
     defaultConfig {
         testInstrumentationRunner = 'android.support.test.runner.AndroidJUnitRunner'
@@ -62,7 +62,7 @@ android {
                     // When you specify a version of CMake, as shown below,
                     // the Android plugin searches for its binary within your
                     // PATH environmental variable.
-                    cFlags "-DVERTCOIN_TESTNET=0"
+                    cFlags "-DBITCOIN_TESTNET=0"
                     targets "core-lib"
                 }
             }
@@ -79,7 +79,7 @@ android {
                     // When you specify a version of CMake, as shown below,
                     // the Android plugin searches for its binary within your
                     // PATH environmental variable.
-                    cFlags "-DVERTCOIN_TESTNET=1"
+                    cFlags "-DBITCOIN_TESTNET=1"
                     targets "core-lib"
                 }
             }
